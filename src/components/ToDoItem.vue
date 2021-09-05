@@ -10,9 +10,11 @@ export default {
   name: "ToDoItem",
   props: ["item"],
   setup(props, { emit }) {
+
     function deleteItem(id) {
       emit("delete", id);
     }
+    
     return {
       deleteItem
     };
